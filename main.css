@@ -3,7 +3,7 @@
 	--darker: #1F2937;
 	--darkest: #111827;
 	--grey: #6B7280;
-	--pink: #e2187d;
+	--pink: #4e18e2;
 	--purple: #491ab8;
 	--light: #EEE;
 }
@@ -76,16 +76,19 @@ input, button {
 
 #new-task-submit {
 	color: var(--pink);
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 700;
 	background-image: linear-gradient(to right, white, grey );
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	transition: 0.4s;
-	border:2px solid white;
+	border:1px solid white;
 	padding:7px 10px;
-	border-radius:4px;
+	border-radius:2px;
+}
+#new-task-submit:hover{
+	background-image: linear-gradient(to right, grey, white );
 }
 
 #new-task-submit:hover {
@@ -117,9 +120,9 @@ main {
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: var(--purple);
 	padding: 1rem;
-	border-radius: 1rem;
+	border-radius: 2px;
 	margin-bottom: 1rem;
 }
 
@@ -166,11 +169,16 @@ main {
 	color:black;
 	background:white;
 	padding:3px 5px;
-	border-radius:4px;
+	border-radius:1px;
+	font-size:10px;
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: black;
+	background:rgb(224, 36, 36);
+	font-size:10px;
+	border-radius:1px;
+
 }
 
 footer{
@@ -195,4 +203,13 @@ font-size:1.5em;
     html{
         font-size: 75%;
     }
+}
+
+.title{
+	font-size: 2em;
+}
+
+.paragraph{
+	text-align: center;
+	font-size: .7em;
 }
